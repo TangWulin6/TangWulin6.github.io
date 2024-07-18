@@ -1,0 +1,27 @@
+html{
+    background-color: rgb(246, 252, 255);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+p{
+    font-size: 22px;
+    font-family: SimSun;
+    line-height:1.7em;
+    text-indent: 2em;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: KaiTi;
+}
+h2{
+    font-weight:normal;
+    font-family: STZhongsong;
+}
+.yz{
+    font-family: FangSong;
+    color:saddlebrown;
+}
+.lv{
+    color: darkgreen;
+}
