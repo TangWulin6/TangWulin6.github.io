@@ -28,6 +28,7 @@ h2{
 }
 a{
     color:red;
+    text-decoration:none;
 }
 .gj>p,.gj>p>a{
     color: rgb(0, 0, 107);
