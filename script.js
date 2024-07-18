@@ -11,3 +11,6 @@ function Fan(){
     }
     
 }
+function Zan(){
+    window.alert("感谢支持！")
+}
