@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: "OPS";
+    src: url("OPPOS.ttf");
+}
 html{
     background-color: rgb(246, 252, 255);
     padding-left: 5%;
@@ -13,7 +16,7 @@ p{
 h1{
     font-size: 40px;
     font-weight: bold;
-    font-family: KaiTi;
+    font-family: OPS;
 }
 h2{
     font-weight:normal;
@@ -34,4 +37,8 @@ a{
     color: rgb(0, 0, 107);
     text-indent:0em;
     line-height: normal;
+}
+button{
+    font-size: 20px;
+    font-family: SimSun;
 }
