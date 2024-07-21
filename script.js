@@ -2,7 +2,7 @@ var a = 0
 
 function Fan(){
     if(a == 0) {
-        document.getElementById("e").innerHTML ="有时候，知道太多并不一定是一件好事。"
+        document.getElementById("e").innerHTML ="有时候，知道太多并不一定是一件好事。";
         a = 1
     } 
     else{
@@ -12,5 +12,5 @@ function Fan(){
     
 }
 function Zan(){
-    window.alert("感谢支持！")
+    window.alert("感谢支持！");
 }
