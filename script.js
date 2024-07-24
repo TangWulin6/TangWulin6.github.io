@@ -1,4 +1,7 @@
-var a = 0
+var a = 0;
+
+
+
 
 function Fan(){
     if(a == 0) {
@@ -13,4 +16,10 @@ function Fan(){
 }
 function Zan(){
     window.alert("感谢支持！");
+}
+function Srh(){
+    var s = document.getElementById("se");
+    var v = s.value;
+    var str1 = "https://cn.bing.com/search?q="+v
+    window.open(str1);
 }
