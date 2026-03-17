@@ -1,0 +1,105 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分离定律基因型组合演示</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>分离定律</h1>
+            <p class="subtitle">Made by HMZ with Trae</p>
+            <div class="gene-toggle">
+                <button id="two-gene-btn" class="btn btn-primary active">两对基因</button>
+                <button id="three-gene-btn" class="btn btn-secondary">三对基因</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="center-section">
+                <div class="animation-section">
+                    <div class="gamete-container">
+                        <h3>母本</h3>
+                        <div class="gamete-row column-gametes two-genes">
+                            <div class="gamete" data-gamete="AB">AB</div>
+                            <div class="gamete" data-gamete="Ab">Ab</div>
+                            <div class="gamete" data-gamete="aB">aB</div>
+                            <div class="gamete" data-gamete="ab">ab</div>
+                        </div>
+                        <div class="gamete-row column-gametes three-genes hidden">
+                            <div class="gamete" data-gamete="ABC">ABC</div>
+                            <div class="gamete" data-gamete="ABc">ABc</div>
+                            <div class="gamete" data-gamete="AbC">AbC</div>
+                            <div class="gamete" data-gamete="Abc">Abc</div>
+                            <div class="gamete" data-gamete="aBC">aBC</div>
+                            <div class="gamete" data-gamete="aBc">aBc</div>
+                            <div class="gamete" data-gamete="abC">abC</div>
+                            <div class="gamete" data-gamete="abc">abc</div>
+                        </div>
+                    </div>
+
+                    <div class="gamete-container">
+                        <h3>父本</h3>
+                        <div class="gamete-row row-gametes two-genes">
+                            <div class="gamete" data-gamete="AB">AB</div>
+                            <div class="gamete" data-gamete="Ab">Ab</div>
+                            <div class="gamete" data-gamete="aB">aB</div>
+                            <div class="gamete" data-gamete="ab">ab</div>
+                        </div>
+                        <div class="gamete-row row-gametes three-genes hidden">
+                            <div class="gamete" data-gamete="ABC">ABC</div>
+                            <div class="gamete" data-gamete="ABc">ABc</div>
+                            <div class="gamete" data-gamete="AbC">AbC</div>
+                            <div class="gamete" data-gamete="Abc">Abc</div>
+                            <div class="gamete" data-gamete="aBC">aBC</div>
+                            <div class="gamete" data-gamete="aBc">aBc</div>
+                            <div class="gamete" data-gamete="abC">abC</div>
+                            <div class="gamete" data-gamete="abc">abc</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <button id="single-btn" class="btn btn-primary">单抽</button>
+                    <button id="multi-btn" class="btn btn-primary">十连</button>
+                    <button id="hundred-btn" class="btn btn-primary">百连</button>
+                    <button id="reset-btn" class="btn btn-secondary">重置</button>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <h3>基因型组合结果</h3>
+                <div class="results-list" id="results-list">
+                    <!-- 结果将通过JavaScript动态添加 -->
+                </div>
+                
+                <div class="chart-section">
+                    <h3>表现型占比</h3>
+                    <div class="chart-container">
+                        <canvas id="genotype-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="explanation">
+                <h3 class="two-genes">典型双因子杂交分离比</h3>
+                <h3 class="three-genes hidden">典型三因子杂交分离比</h3>
+                <div class="ratio-display two-genes">
+                    <div class="ratio-main">9 : 3 : 3 : 1</div>
+                    <div class="ratio-approx">≈ 56% : 19% : 19% : 6%</div>
+                </div>
+                <div class="ratio-display three-genes hidden">
+                    <div class="ratio-main">27 : 9 : 9 : 9 : 3 : 3 : 3 : 1</div>
+                    <div class="ratio-approx">≈ 42% : 14% : 14% : 14% : 5% : 5% : 5% : 2%</div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">注：这是理想状态下的理论比例，实际随机组合结果会有统计波动</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body></html>
